@@ -1,30 +1,34 @@
 <p id="notice"><%= notice %></p>
 
+<h2><span class="blue">Entered Zip Code (@location.zip)</span></h2>
+<blockquote>Here is the list of details for the zip code you entered.</blockquote>
 <p>
-  <b>City:</b>
-  <%= @location.city %>
+  <p>
+    <b>City:</b>
+    <%= @location.city %>
+  </p>
+
+  <p>
+    <b>State:</b>
+    <%= @location.state %>
+  </p>
+
+  <p>
+    <b>Zip:</b>
+    <%= @location.zip %>
+  </p>
+
+  <p>
+    <b>Lat:</b>
+    <%= @location.lat %>
+  </p>
+
+  <p>
+    <b>Lon:</b>
+    <%= @location.lon %>
+  </p>
+
+
+  <%= link_to 'Edit', edit_location_path(@location) %> |
+  <%= link_to 'Back', locations_path %>
 </p>
-
-<p>
-  <b>State:</b>
-  <%= @location.state %>
-</p>
-
-<p>
-  <b>Zip:</b>
-  <%= @location.zip %>
-</p>
-
-<p>
-  <b>Lat:</b>
-  <%= @location.lat %>
-</p>
-
-<p>
-  <b>Lon:</b>
-  <%= @location.lon %>
-</p>
-
-
-<%= link_to 'Edit', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>

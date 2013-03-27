@@ -11,3 +11,306 @@
  *= require_self
  *= require_tree .
  */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+  border:0 none;
+  font-family:inherit;
+  font-size:100%;
+  font-style:inherit;
+  font-weight:inherit;
+  outline-color:invert;
+  outline-style:none;
+  outline-width:0;
+  vertical-align:baseline;
+  margin:0;
+  padding:0;
+}
+
+table {
+  border-collapse:separate;
+  border-spacing:0;
+  background-color:#f5f5f5;
+  border-radius:5px;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border:1px solid #ebebeb;
+  width:100%;
+  padding:5px;
+}
+
+caption,th,td {
+  font-weight:400;
+  text-align:left;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+  content:"";
+}
+
+strong,b {
+  font-weight:700;
+}
+
+em,i {
+  font-style:italic;
+}
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  background:#a6c9e3 url(http://opensourcetemplates.org/wp-content/themes/ost_v2/images/header.jpg) no-repeat 50% -155px;
+  height: 109px;
+  border-bottom: 1px solid #0c0d0b;
+  color:#333;
+  font-family:verdana, arial, helvetica, sans-serif;
+  font-size:13px;
+  line-height:18px;
+}
+
+a {
+  text-decoration:none;
+  color:#000;
+}
+
+a:hover {
+  text-decoration:underline;
+  color:#fff;
+  background-color:#000;
+}
+
+#wrapper {
+  width:938px;
+  margin:0 auto;
+}
+
+#content {
+  background:#fff;
+  width:900px;
+  margin:120px 0 100px;
+  padding:13px 13px 7px;
+}
+
+#header {
+  padding:15px 0 15px 13px;
+}
+
+h1 {
+  font-size:30px;
+  font-family:arial;
+  color:#81accc;
+  line-height:32px;
+}
+
+#menu ul {
+  background:#222;
+  font-size:14px;
+  list-style:none;
+  color:#fff;
+  text-transform:uppercase;
+}
+
+#menu ul li a {
+  color:#fff;
+  display:inline-block;
+  text-decoration:none;
+  padding:10px 15px;
+}
+
+#container {
+  background:#ebebeb;
+  border-top:1px solid #fff;
+}
+
+h4 {
+  font-weight:400;
+  font-size:16px;
+  color:#2b2b2b;
+  padding:10px 10px 10px 20px;
+}
+
+#sidebar img.featuredproducts {
+  display:block;
+  margin:0 0 0 -5px;
+}
+
+#sidebar img.ttshirt {
+  float:right;
+  margin:20px 13px 0 10px;
+}
+
+h3 {
+  font-size:14px;
+  color:#81accc;
+  text-transform:uppercase;
+  padding:10px 0;
+}
+
+h3 a {
+  color:#81accc;
+  text-decoration:none;
+}
+
+h3 a:hover {
+  color:#81accc;
+  text-decoration:underline;
+}
+
+h3 a.str {
+  color:#81accc;
+  padding:0 16px 0 0;
+}
+
+#sidebar p {
+  font-size:12px;
+  line-height:15px;
+}
+
+#main {
+  margin:35px 0 0 35px;
+  padding:50px 30px 25px;
+}
+
+h2 {
+  font-weight:400;
+  font-size:30px;
+  height:66px;
+  text-transform:uppercase;
+  color:#2b2b2b;
+  position:absolute;
+  width:300px;
+  margin:-80px 0 0 -30px;
+  padding:15px 0 0 30px;
+}
+
+#main blockquote {
+  font-size:14px;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#81accc;
+  line-height:18px;
+  font-weight:400;
+  text-transform:uppercase;
+}
+
+#main p {
+  font-size:12px;
+  color:#000;
+  line-height:12px;
+  padding:10px 0;
+}
+
+#main img.line {
+  padding:15px 0 5px;
+}
+
+#footer {
+  background:#212121;
+  text-align:right;
+  color:#fff;
+  clear:both;
+  padding:10px 14px;
+}
+
+#footer span {
+  float:left;
+}
+
+#footer ul {
+  list-style:none;
+}
+
+#footer ul li a {
+  color:#fff;
+  padding:0 5px;
+}
+
+td,th {
+  padding:1px 5px;
+}
+
+thead {
+  font:normal 18px Helvetica Neue,Helvetica,sans-serif;
+  text-shadow:0 1px 0 #FFF;
+  color:#4D5054;
+}
+
+th {
+  text-align:left;
+  border-bottom:1px solid #fff;
+  font-weight:700;
+  color:#4D5054;
+}
+
+td {
+  font-size:18px;
+}
+
+td:hover {
+  background-color:#fff;
+}
+
+p,ol,ul,td {
+  font-family:verdana, arial, helvetica, sans-serif;
+  font-size:13px;
+  line-height:18px;
+}
+
+pre {
+  background-color:#eee;
+  font-size:11px;
+  padding:10px;
+}
+
+a:visited {
+  color:#666;
+}
+
+div.field,div.actions {
+  margin-bottom:10px;
+}
+
+#notice {
+  color:green;
+}
+
+.field_with_errors {
+  background-color:red;
+  display:table;
+  padding:2px;
+}
+
+#error_explanation {
+  width:450px;
+  border:2px solid red;
+  margin-bottom:20px;
+  background-color:#f0f0f0;
+  padding:7px 7px 0;
+}
+
+#error_explanation h2 {
+  text-align:left;
+  font-weight:700;
+  font-size:12px;
+  background-color:#c00;
+  color:#fff;
+  margin:-7px -7px 0;
+  padding:5px 5px 5px 15px;
+}
+
+#error_explanation ul li {
+  font-size:12px;
+  list-style:square;
+}
+
+h1 a,h1 a:hover {
+  text-decoration:none;
+}
+
+#menu ul li,#footer ul li {
+  display:inline;
+}
+
+#menu ul li a:hover,#menu ul li.selected a,h2 span.blue {
+  color:#81accc;
+}

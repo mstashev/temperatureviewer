@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Temperatureviewer</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Temperatureviewer</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="content">
+        <div id="header">
+          <h1>
+            <a href="#">TEMPERATURE VIEWER</a>
+          </h1>
+        </div>
+        <div id="menu">
+          <ul>
+              <li><a href="/locations">Locations</a></li>
+          </ul>
+        </div>
+        <div id="container">
+          <div id="main">
+              <%= yield %>
+          </div>
+        </div>
+        <div id="footer">
+          Template modified from: <a href="http://opensourcetemplates.org/preview/surf-company-template/">http://opensourcetemplates.org/preview/surf-company-template/</a>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

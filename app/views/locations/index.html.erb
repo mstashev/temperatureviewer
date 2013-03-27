@@ -1,31 +1,37 @@
-<h1>Listing locations</h1>
+<h2><span class="blue">Temps</span></h2>
+<blockquote>Following is a list of temperatures of selected cities in the United States.</blockquote>
+<p>
+    <h1>Listing locations</h1>
 
-<table>
-  <tr>
-    <th>City</th>
-    <th>State</th>
-    <th>Zip</th>
-    <th>Lat</th>
-    <th>Lon</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <table>
+      <tr>
+        <th>Temp (&deg;F)</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zip</th>
+        <th>Lat</th>
+        <th>Lon</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
 
-<% @locations.each do |location| %>
-  <tr>
-    <td><%= location.city %></td>
-    <td><%= location.state %></td>
-    <td><%= location.zip %></td>
-    <td><%= location.lat %></td>
-    <td><%= location.lon %></td>
-    <td><%= link_to 'Show', location %></td>
-    <td><%= link_to 'Edit', edit_location_path(location) %></td>
-    <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
+    <% @locations.each do |location| %>
+      <tr>
+        <td><%= location.get_current_conditions(location.zip) %></td>
+        <td><%= location.city %></td>
+        <td><%= location.state %></td>
+        <td><%= location.zip %></td>
+        <td><%= location.lat %></td>
+        <td><%= location.lon %></td>
+        <td><%= link_to 'Show', location %></td>
+        <td><%= link_to 'Edit', edit_location_path(location) %></td>
+        <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    </table>
 
-<br />
+    <br />
 
-<%= link_to 'New Location', new_location_path %>
+    <%= link_to 'Create Location', new_location_path %>
+</p>

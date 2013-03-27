@@ -41,6 +41,7 @@ class LocationsController < ApplicationController
   # POST /locations.json
   def create
     @location = Location.new(params[:location])
+    @location.get_geolookup(params[:location][:zip])
 
     respond_to do |format|
       if @location.save
@@ -57,6 +58,7 @@ class LocationsController < ApplicationController
   # PUT /locations/1.json
   def update
     @location = Location.find(params[:id])
+    @location.get_geolookup(params[:location][:zip])
 
     respond_to do |format|
       if @location.update_attributes(params[:location])
